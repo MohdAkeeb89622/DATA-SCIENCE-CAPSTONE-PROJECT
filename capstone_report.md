@@ -96,16 +96,18 @@ A market-day is flagged if:
 | 2018-03-27 | NVDA | crash + volume_shock | -0.078 | -3.092 | 3.683 | 100.0 | 99.355 | |ret_z| > 2.5; volz > 2.5; range_pct > 95 |
 
 ## 9. Figures
-The following plots were generated:
-- `capstone_report_assets/anomalies_by_ticker.png`
-- `capstone_report_assets/anomalies_per_month.png`
-- `capstone_report_assets/market_anomalies_per_month.png`
+The following plots are generated in the Jupyter notebook (`Capstone_Project_(Stock_Market_Anomaly_Detection).ipynb`):
+- Anomalies by ticker (bar chart)
+- Anomalies per month (time series)
+- Market anomalies per month (time series)
 
 ## 10. How to Run
+All commands below should be run from the `stock_anomaly_capstone/` directory:
 ```bash
-py -m src.walkforward --data-dir data/raw --universe QQQ,AAPL,MSFT,NVDA,AMZN,META --out-dir outputs
-py -m src.query --out-dir outputs --date 2020-02-27
-py -m src.monthly --out-dir outputs --month 2020-02
+cd stock_anomaly_capstone
+python -m src.walkforward --data-dir data/raw --universe QQQ,AAPL,MSFT,NVDA,AMZN,META --out-dir outputs
+python -m src.query --out-dir outputs --date 2020-02-27
+python -m src.monthly --out-dir outputs --month 2020-02
 ```
 
 ## 11. Limitations & Improvements
