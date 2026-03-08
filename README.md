@@ -14,7 +14,6 @@ DATA-SCIENCE-CAPSTONE-PROJECT/
 ├── Capstone_Project_(...).ipynb    # Jupyter notebook (EDA + analysis)
 ├── capstone project anamoly detection.pdf   # Original assignment spec
 └── stock_anomaly_capstone/
-    ├── requirements.txt
     ├── src/
     │   ├── __init__.py
     │   ├── config.py               # Windows, Thresholds, DEFAULT_UNIVERSE
